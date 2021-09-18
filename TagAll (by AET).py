@@ -14,7 +14,7 @@ def register(cb):
 class TagallMod(loader.Module):
 	"""Tagall"""
 	strings = {
-		"name": "TagAll": "None"
+		"name": "TagAll" "None"
 	}
 
 	async def client_ready(self, client, db):

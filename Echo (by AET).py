@@ -18,11 +18,11 @@ class EchoMod(loader.Module):
         if chatid not in echos:
             echos.append(chatid)
             self.db.set("Echo", "chats", echos)
-            return await message.edit("<b>[Echo Mode]</b> Ебальня Активирована в этой мусорке!")
+            return await message.edit("<b>[Повтор Mode]</b> Ебальня Активирована в этой мусорке!")
 
         echos.remove(chatid)
         self.db.set("Echo", "chats", echos)
-        return await message.edit("<b>[Echo Mode]</b> Ебальня Деактивирован в этой мусорке!")
+        return await message.edit("<b>[Повтор Mode]</b> Ебальня Деактивирован в этой мусорке!")
 
 
     async def watcher(self, message):

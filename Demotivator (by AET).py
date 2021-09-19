@@ -10,10 +10,8 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class DeMoTiVaToRsMod(loader.Module):
-	"""Демотиваторы на картинки от @GovnoCodules by @DneZyeK"""
-	strings = {
-		"name": "Демотиватор"
-	}
+	
+	strings = {'name': 'Демотиватор'}
 
 	async def client_ready(self, client, db):
 		self.client = client

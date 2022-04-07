@@ -14,4 +14,4 @@ class FullApiMod(loader.Module):
     async def rndfullcmd(self, m):
         """.rndfull - получить рандомный фулл :)
         """
-        await m.edit("<a href=\""+get("https://api.d4n13l3k00.ru/random_full").json()['url']+"\">Я всегда нахожу фулл❤</a>")
+        await m.edit("<a href=\""+get("https://api.d4n13l3k00.ru/shit/random_full").json()['url']+"\">Я всегда нахожу фулл❤</a>")

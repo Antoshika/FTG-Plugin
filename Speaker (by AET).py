@@ -60,25 +60,25 @@ class DttsMod(loader.Module):
     @loader.unrestricted
     @loader.ratelimit
     async def levitancmd(self, message):
-        """Convert text to speech with levitan voice"""
+        """Конвертировать текст в голос levitan'a"""
         await self.say(message, "levitan", utils.get_args_raw(message))
 
     @loader.unrestricted
     @loader.ratelimit
     async def oksanacmd(self, message):
-        """Convert text to speech with oksana voice"""
+        """Конвертировать текст в голос oksan'ы"""
         await self.say(message, "oksana", utils.get_args_raw(message))
 
     @loader.unrestricted
     @loader.ratelimit
     async def yandexcmd(self, message):
-        """Convert text to speech with yandex voice"""
+        """Конвертировать текст в голос yandex'a"""
         await self.say(message, None, utils.get_args_raw(message))
 
     @loader.unrestricted
     @loader.ratelimit
     async def ttscmd(self, message):
-        """Convert text to speech with Google APIs"""
+        """Конвертировать текст в Googl'a"""
         reply = await message.get_reply_message()
         text = utils.get_args_raw(message.message)
 
